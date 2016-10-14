@@ -374,7 +374,7 @@ a.in-text:hover {
 
 /*paragraph*/
 .example p{
-	font-family: "Raleway", sans-serif;
+	font-family: "Roboto-Light", sans-serif;
 	font-size:1rem;
 	font-weight:400;
 	color:#333;
@@ -386,7 +386,7 @@ a.in-text:hover {
 }
 
 .example ul li span{
-	font-family: "Raleway", sans-serif;
+	font-family: "Roboto-Light", sans-serif;
 	font-size:18px;
 	color:#666;
 }
@@ -397,7 +397,7 @@ a.in-text:hover {
 }
 
 .example ol li span{
-	font-family: "Raleway", sans-serif;
+	font-family: "Roboto-Light", sans-serif;
 	font-size:18px;
 	color:#333;
 }
