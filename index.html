@@ -5,7 +5,7 @@
 	<head>
 
 		<meta charset = "UTF-8">
-		<title>P01 - Yihan Li</title>
+		<title>P02 - Style Guide</title>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Raleway:400,600,700">
   		<link rel="stylesheet" href="css/style.css">
   		<link rel="stylesheet" href="css/fonts.css">
@@ -23,7 +23,7 @@
 			<a href="#interactive-elements">Interactive Elements</a>
 		    <a href="#text-styling">Text-Styling</a>
 		    <a href="#combined-elements">Combined Elements</a>
-		    <a href="#wireframes">Wireframes</a>
+		    <a href="#site-map">Site Map</a>
 		    <a href="#citation">Citation</a>
 		</div>
 
@@ -57,22 +57,25 @@
 					<h3>Nav Button Style</h3>
 					
 					<h4>Example</h4>
-						<div class="nav-button">
-							<ul class="nav">
-		  						<li><a href="#">HOME</a><i class="circle"></i></li>
-		  					</ul>
-	  					</div>
-
+					<div class="nav-button">
+						<nav>
+							<ul id="main">
+								<li class="parent">Home</li>
+							</ul>
+						</nav>
+					</div>
 					<h4>CSS Selector</h4>
-					<p>.nav li a</p>
+					<p>nav #main .parent</p>
 
 					<h4>Sample Code</h4>
 					<div class="sample-code">		
 					
 						<pre class="prettyprint html-code">
-&lt;ul class="nav"&gt;
-	&lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;i class="circle"&gt;&lt;/i&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;nav&gt;
+	&lt;ul id="main"&gt;
+		&lt;li class="parent"&gt;Home&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/nav&gt;
 						</pre>
 					</div>
 
@@ -122,9 +125,10 @@
 					
 					<h4>Example</h4>
 					<div class="example">
-						<form action="#" class="my-form">
-							<input id="name" type="text" name="name" placeholder="Name" />  
-						</form>
+						<div class="text-input">
+						  <input id="input" type="text" required="required"/>
+						  <label for="input">Textfield</label><i class="bar"></i>
+						</div>
 					</div>
 
 					<h4>CSS Selector</h4>
@@ -133,9 +137,10 @@
 					<h4>Sample Code</h4>
 					<div class="sample-code">
 							<pre class="prettyprint html-code">
-&lt;form action="#" class="my-form"&gt;
-	&lt;input id="name" type="text" name="name" placeholder="Name" /&gt;  
-&lt;/form&gt;
+&lt;div class="text-input"&gt;
+  &lt;input id="input" type="text" required="required"/&gt;
+  &lt;label for="input"&gt;Textfield&lt;/label&gt;&lt;i class="bar"&gt;&lt;/i&gt;
+&lt;/div&gt;
 							</pre>
 					</div>
 
@@ -272,32 +277,86 @@
 					<h3>Main Navigation</h3>
 						
 					<h4>Example</h4>
-						
+
 					<div class="example">
-						<ul class="nav">
-							<li class="in-line"><a href="">HOME</a></li>
-							<li class="in-line"><a href="">EYECARE</a></li>
-							<li class="in-line"><a href="">EYEWEAR</a></li>
-							<li class="in-line"><a href="">HELP</a></li>
-							<li class="in-line"><a href="">ABOUT</a></li>
-						</ul>
+						<nav>
+							<ul id="main">
+								<li class="parent">Home</li>
+								<li class="parent">Eyewear
+									<ul class="drop">
+										<div>
+											<li class="child">Glasses</li>
+											<li class="child">Sun Glasses</li>
+										</div>
+									</ul>
+								</li>
+								<li class="parent">Events</li>
+								<li class="parent">Help
+									<ul class="drop">
+										<div>
+											<li class="child">Contact Us</li>
+											<li class="child">Shipping &amp; Return</li>
+											<li class="child">Payment &amp; Security</li>
+											<li class="child">Order Tracking</li>
+										</div>
+									</ul>
+								</li>
+								<li class="parent">About
+									<ul class="drop">
+										<div>
+											<li class="child">Our Story</li>
+											<li class="child">Store Locator</li>
+											<li class="child">Carrer</li>
+									</div>
+									</ul>
+								</li>
+							<div id="marker"></div>
+							</ul>
+						</nav>
 					</div>
 
 					<h4>CSS Selector</h4>
-					<p>.nav</p>
+					<p>nav</p>
 
 					<h4>Sample Code</h4>
 					
 					<div class="sample-code">
 	
 							<pre class="prettyprint html-code">
-&lt;ul class="nav"&gt;
-	&lt;li class="in-line"&gt;&lt;a href=""&gt;HOME&lt;/a&gt;&lt;/li&gt;
-	&lt;li class="in-line"&gt;&lt;a href=""&gt;EYECARE&lt;/a&gt;&lt;/li&gt;
-	&lt;li class="in-line"&gt;&lt;a href=""&gt;EYEWEAR&lt;/a&gt;&lt;/li&gt;
-	&lt;li class="in-line"&gt;&lt;a href=""&gt;HELP&lt;/a&gt;&lt;/li&gt;
-	&lt;li class="in-line"&gt;&lt;a href=""&gt;ABOUT&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;nav&gt;
+	&lt;ul id="main"&gt;
+		&lt;li class="parent"&gt;Home&lt;/li&gt;
+		&lt;li class="parent"&gt;Eyewear
+			&lt;ul class="drop"&gt;
+				&lt;div&gt;
+					&lt;li class="child"&gt;Glasses&lt;/li&gt;
+					&lt;li class="child"&gt;Sun Glasses&lt;/li&gt;
+				&lt;/div&gt;
+			&lt;/ul&gt;
+		&lt;/li&gt;
+		&lt;li class="parent"&gt;Events&lt;/li&gt;
+		&lt;li class="parent"&gt;Help
+			&lt;ul class="drop"&gt;
+				&lt;div&gt;
+					&lt;li class="child"&gt;Contact Us&lt;/li&gt;
+					&lt;li class="child"&gt;Shipping &amp;amp; Return&lt;/li&gt;
+					&lt;li class="child"&gt;Payment &amp;amp; Security&lt;/li&gt;
+					&lt;li class="child"&gt;Order Tracking&lt;/li&gt;
+				&lt;/div&gt;
+			&lt;/ul&gt;
+		&lt;/li&gt;
+		&lt;li class="parent"&gt;About
+			&lt;ul class="drop"&gt;
+				&lt;div&gt;
+					&lt;li class="child"&gt;Our Story&lt;/li&gt;
+					&lt;li class="child"&gt;Store Locator&lt;/li&gt;
+					&lt;li class="child"&gt;Carrer&lt;/li&gt;
+			&lt;/div&gt;
+			&lt;/ul&gt;
+		&lt;/li&gt;
+	&lt;div id="marker"&gt;&lt;/div&gt;
+	&lt;/ul&gt;
+&lt;/nav&gt;
 							</pre>
 							
 					</div>
@@ -439,23 +498,13 @@
 
 			</div>
 
-			<div class="component" id="wireframes">
+			<div class="component" id="site-map">
 
-				<h2 class="heading">Interactive Wireframes</h2>
+				<h2 class="heading">Site Map</h2>
 
 				<div class=sub-component>
 
-					<p>Please read the notes section on the left side of wireframe pages for instructions :) </p>
-
-					<h3>Smartwatch</h3>
-					<p><a href="http://5ie1lg.axshare.com" target="_blank" class="in-text">http://5ie1lg.axshare.com</a></p>
-					
-					<h3>Smartphone</h3>
-					<p><a href="http://cbo5c9.axshare.com" target="_blank" class="in-text">http://cbo5c9.axshare.com</a></p>
-					
-					<h3>Game Console</h3>
-					<p><a href="http://whl24k.axshare.com" target="_blank" class="in-text">http://whl24k.axshare.com</a></p>
-					
+					<p>Site map goes here.</p>
 
 				</div>
 

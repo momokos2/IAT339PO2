@@ -8,13 +8,7 @@ html, body {
     font-size:16px;
 }
 
-body {
-    font-size: 18px;
-}
 
-div {
-    display: block;
-}
 
 /*----------------------nav-section styling----------------------*/
 
@@ -139,42 +133,161 @@ a.in-text:hover {
 }
 
 /*nav*/
-.nav {
-  list-style: none;
+#main {
+	position: relative;
+	list-style: none;
+	font-weight: 400;
+	display: inline-block;
+	padding: 0;
+	margin:0;
 }
 
-.nav li a {
-	font-family: "Montserrat", sans-serif;
-	text-transform: uppercase;
-	display: block; 
-	padding: 12px 18px; 
-	text-decoration: none; 
-	color: #666; 
-	border-bottom: 1px solid #eee;
-	transition: all ease .5s;
+#main li {
+	box-sizing: border-box;
+	font-size: 1rem;
+	display: inline-block;
+	position: relative;
+	padding: 15px 20px;
+	cursor: pointer;
+	z-index: 5;
+	min-width: 120px;
+	color:#333;
+	font-family:"Roboto-Regular", sans-serif;
+	}
+
+#main .drop li {
+	font-size: 0.8rem;
+	background: white;
 }
 
-.nav:hover li a {
-	opacity: .5;
-	transition: all ease .5s;
+
+.drop {
+	overflow: hidden;
+	list-style: none;
+	position: absolute;
+	padding: 0;
+	width: 100%;
+	left: 0;
+	top: 46px;
 }
 
-.nav li:hover a {
-	opacity: 1;
-	color: #9d3625;
-	border-color: #9d3625;
+.drop div {
+	-webkit-transform: translate(0, -100%);
+	-moz-transform: translate(0, -100%);
+	-ms-transform: translate(0, -100%);
+	transform: translate(0, -100%);
+	-webkit-transition: all 0.9s 0.1s;
+	-moz-transition: all 0.9s 0.1s;
+	-ms-transition: all 0.9s 0.1s;
+	transition: all 0.9s 0.1s;
+	position: relative;
+}
+
+.drop li {
+	display: block;
+	padding: 0;
+	width: 100%;
+}
+
+#marker {
+	height: 2px;
+	background: #973241;
+	position: absolute;
+	bottom: 0;
+	width: 120px;
+	z-index: 5;
+	-webkit-transition: all 0.45s;
+	-moz-transition: all 0.45s;
+	-ms-transition: all 0.45s;
+	transition: all 0.45s;
+	visibility: hidden;
+}
+
+#main .parent:hover, #main .child:hover{
+	font-family:"Roboto-Medium", sans-serif;
+}
+
+#main li:nth-child(1):hover ul div {
+	-webkit-transform: translate(0, 0);
+	-moz-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	transform: translate(0, 0);
+}
+
+#main li:nth-child(1):hover ~ #marker {
+	visibility:visible;
+	-webkit-transform: translate(0px, 0);
+	-moz-transform: translate(0px, 0);
+	-ms-transform: translate(0px, 0);
+	transform: translate(0px, 0);
+}
+
+#main li:nth-child(2):hover ul div {
+	-webkit-transform: translate(0, 0);
+	-moz-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	transform: translate(0, 0);
+}
+
+#main li:nth-child(2):hover ~ #marker {
+	visibility:visible;
+	-webkit-transform: translate(120px, 0);
+	-moz-transform: translate(120px, 0);
+	-ms-transform: translate(120px, 0);
+	transform: translate(120px, 0);
+}
+
+#main li:nth-child(3):hover ul div {
+	-webkit-transform: translate(0, 0);
+	-moz-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	transform: translate(0, 0);
+}
+
+#main li:nth-child(3):hover ~ #marker {
+	visibility:visible;
+	-webkit-transform: translate(240px, 0);
+	-moz-transform: translate(240px, 0);
+	-ms-transform: translate(240px, 0);
+	transform: translate(240px, 0);
+}
+
+#main li:nth-child(4):hover ul div {
+	-webkit-transform: translate(0, 0);
+	-moz-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	transform: translate(0, 0);
+}
+
+#main li:nth-child(4):hover ~ #marker {
+	visibility:visible;
+	-webkit-transform: translate(360px, 0);
+	-moz-transform: translate(360px, 0);
+	-ms-transform: translate(360px, 0);
+	transform: translate(360px, 0);
+}
+
+#main li:nth-child(5):hover ul div {
+	-webkit-transform: translate(0, 0);
+	-moz-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	transform: translate(0, 0);
+}
+
+#main li:nth-child(5):hover ~ #marker {
+	visibility:visible;
+	-webkit-transform: translate(480px, 0);
+	-moz-transform: translate(480px, 0);
+	-ms-transform: translate(480px, 0);
+	transform: translate(480px, 0);
 }
 
 /*nav button*/
-.nav-button ul.nav{
-	padding-left: 0;
+.nav-button #main .parent:hover{
+	font-family:"Roboto-Medium", sans-serif;
+	border-bottom: 2px solid #973241;
 }
 
-.nav-button ul.nav a{
-	display:block;
-	width: 50px;
-	text-align: center;
-}
 
 /*submit & reset button*/
 .button {
@@ -250,93 +363,118 @@ a.in-text:hover {
 }
 
 /*Text Input*/
-:-webkit-input-placeholder {
-  color: #000;
-  opacity: 0.5;
-  -webkit-transition: opacity 0.35s ease-in-out;
-  transition: opacity 0.35s ease-in-out;
-}
-:-moz-placeholder {
-  color: #000;
-  opacity: 0.5;
-  -moz-transition: opacity 0.35s ease-in-out;
-  transition: opacity 0.35s ease-in-out;
-}
-:-ms-input-placeholder {  
-  color: #000;
-  opacity: 0.5;
-  -ms-transition: opacity 0.35s ease-in-out;
-  transition: opacity 0.35s ease-in-out;
+.text-input {
+	position: relative;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width:200px;
 }
 
-:hover::-webkit-input-placeholder {
-  opacity: 0.75;
-  -webkit-transition: opacity 0.35s ease-in-out;
-  transition: opacity 0.35s ease-in-out;
-}
-:hover:-moz-placeholder {
-  opacity: 0.75;
-  -moz-transition: opacity 0.35s ease-in-out;
-  transition: opacity 0.35s ease-in-out;
-}
-:hover::-moz-placeholder {
-  opacity: 0.75;
-  -moz-transition: opacity 0.35s ease-in-out;
-  transition: opacity 0.35s ease-in-out;
-}
-:hover:-ms-input-placeholder {  
-  opacity: 0.75;
-  -ms-transition: opacity 0.35s ease-in-out;
-  transition: opacity 0.35s ease-in-out;
+.text-input select {
+	font-family:"Roboto-regular",sans-serif;
+	width: 100%;
+	font-size: 1rem;
+	height: 29px;
+	padding: 2px 2px 1px;
+	font-size: 18px;
+	background: none;
+	border: none;
+	line-height: 29px;
 }
 
-:focus::-webkit-input-placeholder {
-  opacity: 0;
-  -webkit-transition: opacity 0.35s ease-in-out;
-  transition: opacity 0.35s ease-in-out;
-}
-:focus:-moz-placeholder {
-  opacity: 0;
-  -moz-transition: opacity 0.35s ease-in-out;
-  transition: opacity 0.35s ease-in-out;
-}
-:focus::-moz-placeholder {
-  opacity: 0;
-  -moz-transition: opacity 0.35s ease-in-out;
-  transition: opacity 0.35s ease-in-out;
-}
-:focus:-ms-input-placeholder {  
-  opacity: 0;
-  -ms-transition: opacity 0.35s ease-in-out;
-  transition: opacity 0.35s ease-in-out;
+.text-input select ~ .bar {
+	border-bottom: 1px solid #999;
 }
 
-.my-form input
-{
-  font-size: 16px;
-  padding: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 0px;
-  border: 1px solid #d4d4d4;
-  line-height: 20px;
-  text-indent: 5px;
-  width: 400px;
-  display: block;
-  clear: both;
-  margin-bottom: 5px;
+.text-input select ~ .bar:after, .text-input select ~ .bar:before {
+	bottom: -1px;
 }
 
-.my-form input:hover
-{
-  outline: none;
-  border-color: #c9b9aa;
+.text-input select ~ label {
+	font-family:"PT_Sans-Web-Regular",sans-serif;
+	font-size: 0.75rem;
+	color: gray;
+	top: -20px;
 }
-.my-form input:focus
-{
-  outline: none;
-  border-color: #c9b9aa;
+
+.text-input select:focus {
+	outline: none;
 }
+
+.text-input select:focus ~ .bar:before, .text-input select:focus ~ .bar:after {
+	width: 50%;
+}
+
+.text-input label {
+	position: relative;
+	top: 0;
+	pointer-events: none;
+	padding-left: 2px;
+	z-index: 1;
+	color: #b3b3b3;
+	font-family:"Roboto-regular",sans-serif;
+	font-size: 1rem;
+	position: absolute;
+	transition: all 0.2s ease;
+}
+
+.text-input .bar {
+	position: relative;
+	display: block;
+	margin-right: -4px;
+}
+
+.text-input .bar:before, .text-input .bar:after {
+	content: '';
+	height: 2px;
+	width: 0;
+	bottom: 0;
+	position: absolute;
+	background: #a78a7f;
+	transition: all 0.2s ease;
+	z-index: 2;
+}
+
+.text-input .bar:before {
+	left: 50%;
+}
+
+.text-input .bar:after {
+	right: 50%;
+}
+
+.text-input input{
+	display: block;
+	background: none;
+	padding: 2px 2px 1px;
+	font-family:"Roboto-regular",sans-serif;
+	font-size: 1rem;
+	border-width: 0 0 1px;
+	line-height: 29px;
+	border-color: #999;
+	width: 100%;
+	color:#333;
+}
+
+.text-input input:focus{
+	outline: none;
+}
+
+.text-input input:focus ~ label, .text-input input:valid ~ label, .text-input input.hasValue ~ label{
+	font-family:"PT_Sans-Web-Regular",sans-serif;
+	font-size: 0.75rem;
+	color: gray;
+	top: -20px;
+}
+
+.text-input input:focus ~ label{
+	color: #a78a7f;
+}
+
+.text-input input:focus ~ .bar:before, .text-input input:focus ~ .bar:after{
+	width: 50%;
+}
+
 
 /*headings*/
 .example h1{
@@ -419,7 +557,7 @@ a.in-text:hover {
 }
 
 .product-item:hover {
-	border-bottom: 2px solid #9d3625;
+	border-bottom: 2px solid #973241;
 }
 
 .product-item img {
@@ -435,19 +573,18 @@ a.in-text:hover {
 }
 
 .product-list h3 {
-	font-family: "Raleway", sans-serif;
-	font-size:20px;
+	font-family: "Roboto-regular", sans-serif;
+	font-size:1.2rem;
 	font-weight:800;
-	color:#666;
+	color:#333;
 	margin: 0 0 10px 0;
 }
 
-
-.price {
-	font-family: "Raleway", sans-serif;
-	font-size:18px;
+h4.price {
+	font-family: "PT_Sans-Web-Regular", sans-serif;
+	font-size:1rem;
 	font-weight:400;
-	color:#c9b9aa;
+	color:#333;
 	margin:1px 0;
 	display: block;
 	 margin-bottom: 12px;
