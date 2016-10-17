@@ -632,6 +632,15 @@ h4.price {
 	margin-right: 30px;
 }
 
+/*site map*/
+.sitemap{
+	width:100%;
+	height:auto;
+}
 
+.sitemap-page{
+	width:auto;
+	height:auto;
+}
 
 
