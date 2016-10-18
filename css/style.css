@@ -627,6 +627,9 @@ h4.price {
   }
 }
 
+.column--2of3 { flex: 0 0 66.6666%; }
+
+/*citation*/
 .citation-style{
 	margin-left: 30px;
 	margin-right: 30px;
