@@ -590,44 +590,9 @@ h4.price {
 	 margin-bottom: 12px;
 }
 
-/*web grid structure*/
-.grid-structure {
-  max-width: auto;
-  margin:12px 0;
-  font-size: 20px;
-  line-height: 1.5;
-}
+/*grid structure*/
+/*see grids.css*/
 
-.grid-structure p {
-  text-align: center;
-  background-color: #e0e2e3;
-  color: #666;
-  padding: .5em 0;
-  border-radius: 3px;
-  margin: 0 0 1em 0;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 .5em;
-}
-
-.column {
-  flex: 1;
-}
-
-[class^="column"] {
-  padding: 0 .5em;
-}
-
-@media (max-width: 500px) {
-  [class^="column"] {
-    flex: 0 0 100%;
-  }
-}
-
-.column--2of3 { flex: 0 0 66.6666%; }
 
 /*citation*/
 .citation-style{
