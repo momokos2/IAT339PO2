@@ -2,10 +2,15 @@ html, body {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
-    width: 100%;
     vertical-align: baseline;    
     font-size:16px;
+}
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	border:0;
 }
 
 
@@ -134,7 +139,6 @@ a.in-text:hover {
 
 /*nav*/
 #main {
-	position: relative;
 	list-style: none;
 	font-weight: 400;
 	display: inline-block;
@@ -246,10 +250,10 @@ a.in-text:hover {
 
 #main li:nth-child(3):hover ~ #marker {
 	visibility:visible;
-	-webkit-transform: translate(240px, 0);
-	-moz-transform: translate(240px, 0);
-	-ms-transform: translate(240px, 0);
-	transform: translate(240px, 0);
+	-webkit-transform: translate(250px, 0);
+	-moz-transform: translate(250px, 0);
+	-ms-transform: translate(250px, 0);
+	transform: translate(250px, 0);
 }
 
 #main li:nth-child(4):hover ul div {
@@ -261,26 +265,12 @@ a.in-text:hover {
 
 #main li:nth-child(4):hover ~ #marker {
 	visibility:visible;
-	-webkit-transform: translate(360px, 0);
-	-moz-transform: translate(360px, 0);
-	-ms-transform: translate(360px, 0);
-	transform: translate(360px, 0);
+	-webkit-transform: translate(375px, 0);
+	-moz-transform: translate(375px, 0);
+	-ms-transform: translate(375px, 0);
+	transform: translate(375px, 0);
 }
 
-#main li:nth-child(5):hover ul div {
-	-webkit-transform: translate(0, 0);
-	-moz-transform: translate(0, 0);
-	-ms-transform: translate(0, 0);
-	transform: translate(0, 0);
-}
-
-#main li:nth-child(5):hover ~ #marker {
-	visibility:visible;
-	-webkit-transform: translate(480px, 0);
-	-moz-transform: translate(480px, 0);
-	-ms-transform: translate(480px, 0);
-	transform: translate(480px, 0);
-}
 
 /*nav button*/
 .nav-button #main .parent:hover{
@@ -613,30 +603,48 @@ h4.price {
 
 
 /*----------------------website styling----------------------*/
-.container{
-	width: 100%;
-	margin:0 18rem;
+.content-wrapper{
+/*  margin-left: 20%;
+  margin-right: 20%;*/
 }
 
 .nav-bar{
+    top: 0;
 	position: fixed;
 	z-index: 3;
+	width:100%;
+	background-color:gray;
 }
 
 .brand{
 	float:left;
-	padding:15px;
+	width:auto;
+	padding-top:15px;
 	padding-right: 4.5rem;
-}
-
-nav{
-	float:right;
-}
-
-.brand{
+	display:inline-block;
 	font-family: "Lora-Regular", sans-serif;
 	font-size:1.1rem;
 	font-weight: 700;
 	text-decoration: none;
 	color:black;
+}
+
+nav{
+	float:left;
+}
+
+.login-and-bag{
+	list-style: none;
+	display: inline-block;
+	float:right;
+	left:0;
+	padding-top:15px;
+}
+
+.login-and-bag li{
+	box-sizing: border-box;
+	display:inline-block;
+	font-family: "PT_Sans-Web-Regular",sans-serif;
+	font-size: 0.875rem;
+	padding-left: 0.5rem;
 }
