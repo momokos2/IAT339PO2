@@ -39,7 +39,7 @@ html, body {
 	color: #9d3625;
 }
 
-h1{
+h1.style-guide-title{
 	font-family: "Montserrat", sans-serif; 
   	text-transform: uppercase;
   	color:#c9b9aa;
@@ -474,14 +474,14 @@ a.in-text:hover {
 
 
 /*headings*/
-.example h1{
+h1{
 	font-family: "Lora-Regular", sans-serif;
 	font-size:3rem;
 	color:#666;
 	margin:2px 0 1px;
 }
 
-.example h2{
+h2{
 	font-family: "Roboto-Medium", sans-serif;
 	font-size:2rem;
 	font-weight:400;
@@ -489,7 +489,7 @@ a.in-text:hover {
 	margin:1px 0;
 }
 
-.example h3{
+h3{
 	font-family: "Roboto-Regular", sans-serif;
 	font-size:1.75rem;
 	font-weight:800;
@@ -497,7 +497,7 @@ a.in-text:hover {
 	margin:1px 0;
 }
 
-.example h4{
+h4{
 	font-family: "Roboto-Light", sans-serif;
 	font-size:1.25rem;
 	font-weight:400;
@@ -611,6 +611,37 @@ h4.price {
 
 /*----------------------website styling----------------------*/
 
+/*paragraph*/
+p{
+	font-family: "Roboto-Light", sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	color:#333;
+}
+
+/*bulleted list*/
+ul li{
+	color:#c9b9aa;
+}
+
+ul li span{
+	font-family: "Roboto-Light", sans-serif;
+	font-size:18px;
+	color:#666;
+}
+
+/*numbered list*/
+ol li{
+	color: #a78a7f;
+}
+
+ol li span{
+	font-family: "Roboto-Light", sans-serif;
+	font-size:18px;
+	color:#333;
+}
+
+
 /*helper classes*/
 .content-wrapper{
   margin-left: 15%;
@@ -625,10 +656,11 @@ h4.price {
 }
 
 .hcenter{
-	    margin-left: auto;
+	margin-left: auto;
     margin-right: auto;
 }
 /*end of helper classes*/
+
 
 /*nav bar styling*/
 .nav-bar{
@@ -685,7 +717,10 @@ nav{
 }
 /*end of nav bar styling*/
 
+
 /*bag-overview.html styling*/
 
-
+.bag-title{
+	text-align: center;
+}
 /*end of bag-overview.html styling*/
