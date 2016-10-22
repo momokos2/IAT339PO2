@@ -205,7 +205,6 @@ a.in-text:hover {
 	height: 2px;
 	background: #973241;
 	position: absolute;
-	bottom: 0;
 	width: 120px;
 	z-index: 5;
 	-webkit-transition: all 0.45s;
@@ -611,18 +610,37 @@ h4.price {
 
 
 /*----------------------website styling----------------------*/
+
+/*helper classes*/
 .content-wrapper{
   margin-left: 15%;
   margin-right: 15%;
+  margin-top:150px;
 }
 
+.line-separator{
+	height: 1px;
+    background: #717171;
+    border-bottom: 1px solid gainsboro;
+}
+
+.hcenter{
+	    margin-left: auto;
+    margin-right: auto;
+}
+/*end of helper classes*/
+
+/*nav bar styling*/
 .nav-bar{
     top: 0;
 	position: fixed;
 	z-index: 5;
-	height:4rem;
+	height:3.5rem;
 	width:100vw;
 	padding:0 15%;
+	-webkit-box-shadow: 0px 2px 2px 0px rgba(204,204,204,1);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(204,204,204,1);
+	box-shadow: 0px 2px 2px 0px rgba(204,204,204,1);
 }
 
 .brand{
@@ -665,3 +683,9 @@ nav{
 .login-and-bag li a:hover{
 	font-weight:700;
 }
+/*end of nav bar styling*/
+
+/*bag-overview.html styling*/
+
+
+/*end of bag-overview.html styling*/
