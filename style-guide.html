@@ -282,7 +282,6 @@
 					<div class="example">
 						<nav>
 							<ul id="main">
-								<li class="parent">Home</li>
 								<li class="parent">Eyewear
 									<ul class="drop">
 										<div>
@@ -326,7 +325,6 @@
 							<pre class="prettyprint html-code">
 &lt;nav&gt;
 	&lt;ul id="main"&gt;
-		&lt;li class="parent"&gt;Home&lt;/li&gt;
 		&lt;li class="parent"&gt;Eyewear
 			&lt;ul class="drop"&gt;
 				&lt;div&gt;
@@ -505,45 +503,65 @@
 
 							<pre class="prettyprint html-code">
 &lt;div class= "grid-structure"&gt;
-	&lt;div class="row"&gt;
-		&lt;div class="column"&gt;
-			&lt;p&gt;Full Width&lt;/p&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
 
-	&lt;div class="row"&gt;
-		&lt;div class="column"&gt;
-			&lt;p&gt;1/2&lt;/p&gt;
-		&lt;/div&gt;
-		&lt;div class="column"&gt;
-			&lt;p&gt;1/2&lt;/p&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
+    &lt;!-- 1 column --&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-12"&gt;
+        &lt;div class="box"&gt;.col-12&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
 
-	&lt;div class="row"&gt;
-		&lt;div class="column"&gt;
-			&lt;p&gt;1/3&lt;/p&gt;
-		&lt;/div&gt;
-			&lt;div class="column--2of3"&gt;
-		&lt;p&gt;2/3&lt;/p&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
+    &lt;!-- 2 columns --&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-6 col-1/2"&gt;
+        &lt;div class="box"&gt;.col-1/2&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="col-6 col-1/2"&gt;
+        &lt;div class="box"&gt;.col-1/2&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
 
-	&lt;div class="row"&gt;
-		&lt;div class="column"&gt;
-			&lt;p&gt;1/4&lt;/p&gt;
-		&lt;/div&gt;
-		&lt;div class="column"&gt;
-			&lt;p&gt;1/4&lt;/p&gt;
-		&lt;/div&gt;
-		&lt;div class="column"&gt;
-			&lt;p&gt;1/4&lt;/p&gt;
-		&lt;/div&gt;
-		&lt;div class="column"&gt;
-			&lt;p&gt;1/4&lt;/p&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
+    &lt;!-- 2 columns 8/4 --&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-8 col-2/3"&gt;
+        &lt;div class="box"&gt;.col-2/3&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="col-4 col-1/3"&gt;
+        &lt;div class="box"&gt;.col-1/3&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- 3 columns --&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-4 col-1/3"&gt;
+        &lt;div class="box"&gt;.col-1/3&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="col-4 col-1/3"&gt;
+        &lt;div class="box"&gt;.col-1/3&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="col-4 col-1/3"&gt;
+        &lt;div class="box"&gt;.col-1/3&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- 4 columns --&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-3 col-1/4"&gt;
+        &lt;div class="box"&gt;.col-1/4&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="col-3 col-1/4"&gt;
+        &lt;div class="box"&gt;.col-1/4&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="col-3 col-1/4"&gt;
+        &lt;div class="box"&gt;.col-1/4&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="col-3 col-1/4"&gt;
+        &lt;div class="box"&gt;.col-1/4&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
 &lt;/div&gt;
+
 							</pre>
 							
 					</div>

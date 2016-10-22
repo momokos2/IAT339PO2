@@ -7,6 +7,13 @@
 }
 
 @font-face {
+	font-family: 'Lora-Bold';
+	font-weight: normal;
+	font-style: normal;
+	src:url('../fonts/Lora-Regular.ttf') format('truetype');
+}
+
+@font-face {
 	font-family: 'Roboto-Medium';
 	font-weight: normal;
 	font-style: normal;

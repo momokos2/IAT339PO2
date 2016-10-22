@@ -144,7 +144,7 @@ a.in-text:hover {
 
 #main li {
 	box-sizing: border-box;
-	font-size: 1rem;
+	font-size: 0.875rem;
 	display: inline-block;
 	position: relative;
 	padding: 15px 20px;
@@ -156,7 +156,7 @@ a.in-text:hover {
 	}
 
 #main .drop li {
-	font-size: 0.8rem;
+	font-size: 0.6rem;
 	background: white;
 }
 
@@ -612,3 +612,31 @@ h4.price {
 }
 
 
+/*----------------------website styling----------------------*/
+.container{
+	width: 100%;
+	margin:0 18rem;
+}
+
+.nav-bar{
+	position: fixed;
+	z-index: 3;
+}
+
+.brand{
+	float:left;
+	padding:15px;
+	padding-right: 4.5rem;
+}
+
+nav{
+	float:right;
+}
+
+.brand{
+	font-family: "Lora-Regular", sans-serif;
+	font-size:1.1rem;
+	font-weight: 700;
+	text-decoration: none;
+	color:black;
+}
