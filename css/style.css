@@ -148,20 +148,28 @@ a.in-text:hover {
 
 #main li {
 	box-sizing: border-box;
-	font-size: 0.875rem;
 	display: inline-block;
 	position: relative;
 	padding: 15px 20px;
 	cursor: pointer;
 	z-index: 5;
 	min-width: 120px;
-	color:#333;
-	font-family:"Roboto-Regular", sans-serif;
+	
 	}
 
+#main li a{
+	text-decoration: none;
+	font-size: 0.875rem;
+	color:#333;
+	font-family:"Roboto-Regular", sans-serif;
+}
+
 #main .drop li {
-	font-size: 0.6rem;
 	background: white;
+}
+
+#main .drop li a {
+	font-size: 0.6rem;
 }
 
 
@@ -207,7 +215,7 @@ a.in-text:hover {
 	visibility: hidden;
 }
 
-#main .parent:hover, #main .child:hover{
+#main .parent a:hover, #main .child a:hover{
 	font-family:"Roboto-Medium", sans-serif;
 }
 
@@ -604,16 +612,17 @@ h4.price {
 
 /*----------------------website styling----------------------*/
 .content-wrapper{
-/*  margin-left: 20%;
-  margin-right: 20%;*/
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .nav-bar{
     top: 0;
 	position: fixed;
-	z-index: 3;
-	width:100%;
-	background-color:gray;
+	z-index: 5;
+	height:4rem;
+	width:100vw;
+	padding:0 15%;
 }
 
 .brand{
@@ -637,14 +646,22 @@ nav{
 	list-style: none;
 	display: inline-block;
 	float:right;
-	left:0;
 	padding-top:15px;
 }
 
 .login-and-bag li{
 	box-sizing: border-box;
 	display:inline-block;
+}
+
+.login-and-bag li a{
 	font-family: "PT_Sans-Web-Regular",sans-serif;
 	font-size: 0.875rem;
 	padding-left: 0.5rem;
+	text-decoration: none;
+	color:#666;
+}
+
+.login-and-bag li a:hover{
+	font-weight:700;
 }
