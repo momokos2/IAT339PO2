@@ -1,3 +1,5 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
 html, body {
     margin: 0;
     padding: 0;
@@ -356,7 +358,7 @@ a.in-text:hover {
 }
 
 .button:hover .easing-up, .button:hover .easing-down  {
-    height:40px;
+    height:38px;
 }
 
 /*Text Input*/
@@ -508,7 +510,7 @@ h4{
 }
 
 /*paragraph*/
-.example p{
+p{
 	font-family: "Roboto-Light", sans-serif;
 	font-size:1rem;
 	font-weight:400;
@@ -516,22 +518,22 @@ h4{
 }
 
 /*bulleted list*/
-.example ul li{
+ul li{
 	color:#c9b9aa;
 }
 
-.example ul li span{
+ul li span{
 	font-family: "Roboto-Light", sans-serif;
 	font-size:18px;
 	color:#666;
 }
 
 /*numbered list*/
-.example ol li{
+ol li{
 	color: #a78a7f;
 }
 
-.example ol li span{
+ol li span{
 	font-family: "Roboto-Light", sans-serif;
 	font-size:18px;
 	color:#333;
@@ -645,13 +647,14 @@ ol li span{
 
 /*helper classes*/
 .content-wrapper{
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-top:100px;
+	margin:100px 15% -142px 15%;
+	min-height: 100%;
+	height:auto;
+	height:100%;
 }
 
 .line-separator{
-	height: 1px;
+	height: 1px; 
     background: #717171;
     border-bottom: 1px solid gainsboro;
 }
@@ -659,6 +662,18 @@ ol li span{
 .hcenter{
 	margin-left: auto;
     margin-right: auto;
+}
+
+.left{
+	float:left;
+}
+
+.right{
+	float:right;
+}
+
+.push{
+	height:300px;
 }
 /*end of helper classes*/
 
@@ -719,11 +734,61 @@ nav{
 }
 /*end of nav bar styling*/
 
+/*footer styling*/
+
+/*end of footer syling*/
+
+/*---------------------------------------------------------*/
 
 /*bag-overview.html styling*/
-
 .bag-title{
+	font-family:"Roboto-light",sans-serif;
+	font-size: 1.2rem;
 	text-align: center;
+	width:100%;
+	border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+}
+
+h1 span{
+	background:#fff; 
+    padding:0 20px; 
+}
+
+.step-section{
+	text-align:center;
+	display:inline-block;
+	width:100%;
+	margin-top: 2rem;
+	padding-bottom: 2.5rem;
+	border-bottom: 1px solid #000; 
+}
+
+.step-section .step-1, .step-section .step-2, .step-section .step-3, .step-section .step-4{
+	font-family:"Roboto-light",sans-serif;
+	color:#666;
+	font-size: 0.8rem;
+}
+
+.step-section .step-1{
+	font-family:"Roboto-Medium",sans-serif;
+}
+
+.description-section{
+	font-family: "PT_Sans-Web-Regular",sans-serif;
+	text-align:left;
+	display:inline-block;
+	width:100%;
+	margin-top: 0.5rem;
+	padding-bottom: 1.5rem;
+	margin-bottom: 0;
+	border-bottom: 1px solid #000; 
+	font-weight: 700;
+}
+
+.description-section .description-title{
+	padding-bottom:1rem;
 }
 /*end of bag-overview.html styling*/
 
@@ -901,4 +966,149 @@ footer{
 
 
 
+
+
+.overview-pg-img{
+	width:100%;
+	padding-right:2rem;
+}
+
+.fa-trash-o{
+	float:right;
+}
+
+
+a.fa-trash-o:hover{
+	color: #973241;
+}
+
+.description-section .description-component ul{
+	list-style: none;
+	padding:0;
+}
+
+.description-section .description-component ul .overview-pg-product{
+	font-family:"Lora-Regular",serif;
+	font-size: 1.2rem;
+	color:#333;
+}
+
+.description-section .description-component ul .overview-pg-color{
+	font-family:"Roboto-regular",sans-serif;
+	font-size: 0.9rem;
+	color:#666;
+	padding-top: 0.5rem;
+}
+
+.description-section .description-component ul .overview-pg-description{
+	font-family:"Roboto-light",sans-serif;
+	font-size: 0.6rem;
+	color:#666;
+	padding-top: 1rem;
+	padding-right: 1rem;
+}
+
+.quantity-selector{
+	border:solid #666 0.5px;
+	width:100%;
+	font-size: 1rem;
+	font-family:"Roboto-light",sans-serif;
+	padding:0.2rem 0 0.2rem 0.2rem;
+}
+
+.quantity{
+	padding-right: 2rem;
+}
+
+p.overview-pg-price{
+	font-size: 1rem;
+	font-family:"Roboto-Regular",sans-serif;
+	color:#333;
+}
+
+.summary-section{
+	display:inline-block;
+	background-color: rgba(167,138,127,0.1);
+	height:100px;
+	width:100%;
+	margin-top: 0;
+	margin-bottom: 20px;
+	-ms-transform: translate(0,-8px); 
+    -webkit-transform: translate(0,-8px); 
+	transform:translate(0,-5px);
+	padding:1rem 1rem ;
+}
+
+.summary-section ul{
+	list-style: none;
+}
+
+.summary-section ul li{
+	display:inline-block;
+	padding-left:2rem;
+	font-family:"Roboto-Medium",sans-serif;
+	font-size: 1.1rem;
+	color:#333;
+}
+
+.expand {
+  color: black;
+  display: block;
+  text-decoration: none;
+}
+
+section.promotion-section {
+  padding-top: 15px;
+  p {
+    color: lighten(black, 20%);
+    margin: 5px 0 15px;
+  } 
+}
+
+.promotion-code{
+	max-width: 350px;
+}
+
+a.expand{
+	font-family:"PT_Sans-Web-Reglar",sans-serif;
+	color:#666;
+}
+
+a.expand:hover{
+	color:#a78a7f;
+}
+
+.promotion-section form {
+	width:500px;
+	margin:0 auto;
+}
+
+.promotion-bar { 
+	padding:6px 15px 6px 30px;
+	margin:3px; 
+	background-color: white; 
+}
+
+input.promotion-bar[type=text]{
+	color:#333;
+	border:1px solid #666;
+}
+
+input.promotion-bar[type=text]:focus{
+	border:1px solid #973241;
+}
+
+input.promotion-submit[type=button], input.promotion-submit[type=button]:hover {
+	position:relative; 
+	padding:6px 0;
+	left:-3px;
+	border:2px solid #973241;
+	background: #973241; /* Old browsers */
+	color:white;
+	cursor: pointer;
+	font-size: 0.8rem;
+	font-family: "PT_Sans-Web-Regular",sans-serif;
+}
+
+/*---------------------------------------------------------*/
 
