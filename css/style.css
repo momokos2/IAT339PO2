@@ -613,38 +613,6 @@ h4.price {
 
 /*----------------------website styling----------------------*/
 
-/*paragraph*/
-p{
-	font-family: "Roboto-Light", sans-serif;
-	font-size:1rem;
-	font-weight:400;
-	color:#333;
-}
-
-/*bulleted list*/
-ul li{
-	color:#c9b9aa;
-	font-family: "Roboto-regular", sans-serif;
-}
-
-ul li span{
-	font-family: "Roboto-Light", sans-serif;
-	font-size:18px;
-	color:#666;
-}
-
-/*numbered list*/
-ol li{
-	color: #a78a7f;
-}
-
-ol li span{
-	font-family: "Roboto-Light", sans-serif;
-	font-size:18px;
-	color:#333;
-}
-
-
 /*helper classes*/
 .content-wrapper{
 	margin:100px 15% -142px 15%;
@@ -735,10 +703,50 @@ nav{
 /*end of nav bar styling*/
 
 /*footer styling*/
+footer{
+	background: rgb(200,200,200);
+  margin-top: 600px;
+  width: 100%;
+  margin-bottom:-5em;
+  color: #333;
+}
 
+.flex-rw {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.footer-list-top {
+  width: 25%
+}
+.footer-list-top > li {
+  text-align: center;
+  padding-bottom: 10px
+}
+
+.flex-rw ul{
+	list-style: none;
+}
+
+.flex-rw a{
+	text-decoration: none;
+	color: #333;
+	font-family: "Roboto-Light",sans-serif;
+	font-size: 1rem;
+}
+
+.flex-rw a:hover{
+	text-decoration: none;
+	color: white;
+
+}
+
+.footer-list-header{
+	padding:30px 0 10px 0;
+}
 /*end of footer syling*/
 
-/*---------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------*/
 
 /*bag-overview.html styling*/
 .bag-title{
@@ -790,183 +798,6 @@ h1 span{
 .description-section .description-title{
 	padding-bottom:1rem;
 }
-/*end of bag-overview.html styling*/
-
-
-/*homepage.html styling*/
-.event-notice{
-	box-sizing:border-box;
-	background-color: #999;
-	margin-left: auto;
-	margin-right: auto;
-	height:40px;
-	text-align: center;
-	padding-top: 10px;
-	margin-top: -20px;
-
-}
-
-.event-notice a{
-	text-decoration: none;
-	color: #333;
-	font-family: "Roboto-regular", sans-serif;
-	font-size: 1rem;
-	
-}
-
- #title-picture, #event-picture{	
-	background-color: #999;
-	margin-top: 20px;
-	margin-left: 0px;
-	box-sizing:border-box;
-	padding:1em;
-	width: 100%;
-	height:30em;
-	
-}
-
-#title-picture{
-	max-width: 35em;
-	margin-right: 0;	
-	
-}
-
-#event-picture{
-	max-width: 20em;
-	float:left;
-	margin-left: 1em;
-}
-
-.display-picture{
-	display: flex;
-}
-
-.homepage-product-list{
-	margin-top: 1em;
-}
-
-.popular-item-separator{
-	height:3px;
-	margin-top:2em;
-	margin-bottom: 2em;
-	text-align: center;
-}
-
-.popular-item-content{
-	font-size: 1.75rem;
-	font-family: "Roboto-regular", sans-serif;
-	color: #333;
-	background-color: white;
-	text-align: center;
-	width: 30%;
-	margin-left: 300px;
-	margin-top: 50px;
-}
-
-.popular-item-content p{
-	padding-top: -2em;
-}
-
-/*footer styling*/
-
-footer{
-	background: rgb(200,200,200);
-  margin-top: 600px;
-  width: 100%;
-  margin-bottom:-5em;
-  color: #333;
-}
-
-.flex-rw {
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.footer-list-top {
-  width: 25%
-}
-.footer-list-top > li {
-  text-align: center;
-  padding-bottom: 10px
-}
-
-.flex-rw ul{
-	list-style: none;
-}
-
-.flex-rw a{
-	text-decoration: none;
-	color: #333;
-	font-family: "Roboto-Light",sans-serif;
-	font-size: 1rem;
-}
-
-.flex-rw a:hover{
-	text-decoration: none;
-	color: white;
-
-}
-
-.footer-list-header{
-	padding:30px 0 10px 0;
-}
-
-/*end of homepage.html styling*/
-
-/*about.html styling*/
-.page-title{
-	text-align: center;
-	padding-top: 20px;
-}
-
-.about-intro p{
-	margin-top: 30px;
-}
-
-.story{
-	display: flex;
-	margin-top: 50px;
-}
-
-.story h2{
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-.pic{
-	height: 500px;
-	width:auto;
-	background-color: rgb(200,200,200);
-}
-
-.column-left{
-	width: 45%;
-	margin-right: 10%;
-}
-
-.column-right{
-	width: 45%;
-	padding-right: 0px;
-	
-}
-
-/*end of about.html styling*/
-
-
-/*contactus.html styling*/
-
-.left-content{
-	background-color: rgb(200,200,200);
-	width: 40%;
-	height:500px;
-}
-
-
-/*end of contactus.html styling*/
-
-
-
-
 
 .overview-pg-img{
 	width:100%;
@@ -1109,6 +940,138 @@ input.promotion-submit[type=button], input.promotion-submit[type=button]:hover {
 	font-size: 0.8rem;
 	font-family: "PT_Sans-Web-Regular",sans-serif;
 }
+/*end of bag-overview.html styling*/
 
-/*---------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+/*homepage.html styling*/
+.event-notice{
+	box-sizing:border-box;
+	background-color: #999;
+	margin-left: auto;
+	margin-right: auto;
+	height:40px;
+	text-align: center;
+	padding-top: 10px;
+	margin-top: -20px;
+
+}
+
+.event-notice a{
+	text-decoration: none;
+	color: #333;
+	font-family: "Roboto-regular", sans-serif;
+	font-size: 1rem;
+	
+}
+
+ #title-picture, #event-picture{	
+	background-color: #999;
+	margin-top: 20px;
+	margin-left: 0px;
+	box-sizing:border-box;
+	padding:1em;
+	width: 100%;
+	height:30em;
+	
+}
+
+#title-picture{
+	max-width: 35em;
+	margin-right: 0;	
+	
+}
+
+#event-picture{
+	max-width: 20em;
+	float:left;
+	margin-left: 1em;
+}
+
+.display-picture{
+	display: flex;
+}
+
+.homepage-product-list{
+	margin-top: 1em;
+}
+
+.popular-item-separator{
+	height:3px;
+	margin-top:2em;
+	margin-bottom: 2em;
+	text-align: center;
+}
+
+.popular-item-content{
+	font-size: 1.75rem;
+	font-family: "Roboto-regular", sans-serif;
+	color: #333;
+	background-color: white;
+	text-align: center;
+	width: 30%;
+	margin-left: 300px;
+	margin-top: 50px;
+}
+
+.popular-item-content p{
+	padding-top: -2em;
+}
+/*end of homepage.html styling*/
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+/*about.html styling*/
+.page-title{
+	text-align: center;
+	padding-top: 20px;
+}
+
+.about-intro p{
+	margin-top: 30px;
+}
+
+.story{
+	display: flex;
+	margin-top: 50px;
+}
+
+.story h2{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.pic{
+	height: 500px;
+	width:auto;
+	background-color: rgb(200,200,200);
+}
+
+.column-left{
+	width: 45%;
+	margin-right: 10%;
+}
+
+.column-right{
+	width: 45%;
+	padding-right: 0px;
+	
+}
+
+/*end of about.html styling*/
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+/*contactus.html styling*/
+
+.left-content{
+	background-color: rgb(200,200,200);
+	width: 40%;
+	height:500px;
+}
+
+
+/*end of contactus.html styling*/
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
 
