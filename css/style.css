@@ -622,6 +622,7 @@ p{
 /*bulleted list*/
 ul li{
 	color:#c9b9aa;
+	font-family: "Roboto-regular", sans-serif;
 }
 
 ul li span{
