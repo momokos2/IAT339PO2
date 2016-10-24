@@ -622,7 +622,7 @@ h4.price {
 
 /*helper classes*/
 .content-wrapper{
-	margin:100px 15% -142px 15%;
+	margin:100px 15% 0 15%;
 	height:auto;
 }
 
@@ -711,7 +711,6 @@ nav{
 footer{
     background: rgb(200,200,200);
 	display:inline-block;
-	height:300px;
 	height:auto;
 	position:absolute;
 	right:0;
@@ -750,13 +749,13 @@ footer{
 
 
 footer form {
-	width:500px;
+	min-width: 300px;
+	width:auto;
 	margin:0 auto;
 }
 
 .email-bar { 
-	padding:6px 15px 6px 30px;
-	margin:3px; 
+	padding:6px 15px 6px 15px;
 	background-color: white; 
 }
 
@@ -859,13 +858,14 @@ h1 span{
 	border-bottom: 1px solid #000; 
 }
 
-.step-section .step-1, .step-section .step-2, .step-section .step-3, .step-section .step-4{
+.step-section .step-1 a, .step-section .step-2 a, .step-section .step-3 a, .step-section .step-4 a{
+	text-decoration: none;
 	font-family:"Roboto-light",sans-serif;
 	color:#666;
 	font-size: 0.8rem;
 }
 
-.step-section .step-1{
+.step-section .step-1 a{
 	font-family:"Roboto-Medium",sans-serif;
 }
 
@@ -1030,6 +1030,102 @@ input.promotion-submit[type=button], input.promotion-submit[type=button]:hover {
 
 /*---------------------------------------------------------------------------------------------------------------------------------*/
 
+/*bag-login.html styling*/
+.bag-login .step-section .step-2 a{
+	font-family:"Roboto-Medium",sans-serif;
+}
+
+.login-section{
+	margin-top: 2rem;
+}
+
+.returning-customer, .new-customer{
+	height:20rem;
+	text-align: center;
+	padding-top: 1.5rem;
+}
+
+.returning-customer{
+	border:solid 1px #f0f0f0;
+	height:20rem;
+	text-align: center;
+	padding-top: 1.5rem;
+}
+
+.new-customer{
+	background-color: #f0f0f0;
+	height:20rem;
+	text-align: center;
+	padding-top: 1.5rem;
+}
+
+.new-customer p{
+	width: auto;
+	margin-left:10%;
+	margin-right:10%;
+	margin-top: 2rem;
+}
+
+.login-title{
+	font-family: "Roboto-regular",sans-serif;
+	color:#333;
+	font-size: 1.4rem;
+}
+
+.login-form{
+	margin-top: 2rem;
+		  margin-left:10%;
+  margin-right:10%;
+  width:auto;
+}
+
+.login-form input
+{
+	width:100%;
+  border: solid thin #f0f0f0;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  font-family: "PT_Sans-Web-Regular",sans-serif;
+}
+
+.login-form input:hover
+{
+  outline: none;
+  border-color: #a78a7f;
+}
+
+.login-form input:focus
+{
+  outline: none;
+  border-color: #a78a7f;
+}
+
+.login-form .button{
+	margin-top: 1.5rem;
+  	width:auto;
+}
+
+.new-customer .login-form .button{
+	margin-top: 1rem;
+  	width:auto;
+}
+
+.login-support{
+	margin-top: 6rem;
+	text-align: center;
+}
+
+.login-support p{
+	font-family: "PT_Sans-Web-Regular",sans-serif;
+	color:#666;
+	margin-top: 5rem;
+	text-align: center;
+}
+
+/*end of bag-login.html stling*/
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
 /*homepage.html styling*/
 .event-notice{
 	box-sizing:border-box;
@@ -1155,7 +1251,6 @@ input.promotion-submit[type=button], input.promotion-submit[type=button]:hover {
 	width: 40%;
 	height:500px;
 }
-
 
 /*end of contactus.html styling*/
 
