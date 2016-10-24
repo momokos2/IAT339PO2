@@ -1224,17 +1224,28 @@ form.checkout-form{
 
 .checkout-summary .checkbox{
 	padding-top: 0.8rem;
+	width:auto;
 }
 
 .checkout-summary .button{
 	width:auto;
+	margin-bottom: 1rem;
+}
+/*end of bag-checkout.html styling*/
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+/*bag-confirmation.html styling*/
+
+.bag-confirmation .step-section .step-2 a,
+.bag-confirmation .step-section .step-3 a,
+.bag-confirmation .step-section .step-4 a{
+	font-family:"Roboto-Medium",sans-serif;
 }
 
 
+/*end ofbag-confirmation.html styling*/
 
-
-
-/*end of bag-checkout.html styling*/
 
 /*---------------------------------------------------------------------------------------------------------------------------------*/
 
