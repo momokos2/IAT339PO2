@@ -1467,7 +1467,13 @@ ul.confirmation-total li{
 	margin-top: 20px;
 	font-family: "Roboto-Light",sans-serif;
 	font-size: 1rem;	
+	margin-left: 20px;
 }
+
+.column-right h2{
+	margin-left: 20px;
+}
+
 
 .form{
 	margin-left: 20px;
