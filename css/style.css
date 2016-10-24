@@ -1339,10 +1339,66 @@ input.promotion-submit[type=button], input.promotion-submit[type=button]:hover {
 	margin-left: 10px;
 }
 
-
-
-
-/*end of contactus.html styling*/
+/*end of contact-us.html styling*/
 
 /*---------------------------------------------------------------------------------------------------------------------------------*/
+
+/*productlist.html styling*/
+.product-list-page {
+	margin-top: 70px;
+}
+
+.product-list-page section{
+	margin-bottom: 40px;
+}
+
+.product-list-page a{
+	text-decoration: none;
+	color:#333;
+}
+
+.display-image{
+	background-color: rgb(200,200,200);
+	box-sizing:border-box;
+	height:200px;
+	margin-bottom: 30px;
+}
+.left-nav h4{
+	font-family: "Roboto-Regular",sans-serif;
+	color:#c9b9aa;
+	font-size: 1.25em;
+	margin-bottom: 10px;
+}
+
+.left-nav p{
+	font-family: "PT_Sans-Web-Regular",sans-serif;
+	padding: 5px;
+}
+
+.left-nav a:hover{
+	color:#a78a7f;
+}
+
+/*end of productlist.html styling*/
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
