@@ -11,6 +11,7 @@ $(document).ready(function() {
 });
 
 
+
 $(function() {
   
   var photoGallery = function($photoGalleryElement) {
@@ -41,3 +42,5 @@ $(function() {
   });
   
 });
+
+
