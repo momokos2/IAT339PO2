@@ -1855,6 +1855,33 @@ div.write-your-review label{
 		margin-bottom: 2rem;
 	}
 
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+/*event.html styling*/
+.events-content{
+	margin:0;
+	text-align: center;
+	margin-left: 50px;
+}
+
+.events-content h2,section{
+	margin-bottom: 30px;
+}
+
+.events-content h3{
+	padding-bottom: 6px;
+}
+
+
+.events-content p{
+	width:90%;
+	margin-left: 20px;
+}
+
+.event-register-button, .event-login-button{
+	margin-top: 20px;
+}
+
 
 
 
