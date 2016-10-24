@@ -1368,7 +1368,6 @@ ul.confirmation-total li{
  #title-picture, #event-picture{	
 	background-color: #999;
 	margin-top: 20px;
-	margin-left: 0px;
 	box-sizing:border-box;
 	padding:1em;
 	height:30em;
@@ -1377,19 +1376,17 @@ ul.confirmation-total li{
 
 #title-picture{
 	
-	margin-right: 0;	
+	
 	
 }
 
 #event-picture{
 	
-	float:left;
-	margin-left: 1em;
+	
+	margin-left: 0em;
 }
 
-.display-picture{
-	display: flex;
-}
+
 
 .homepage-product-list{
 	margin-top: 1em;
@@ -1432,7 +1429,6 @@ ul.confirmation-total li{
 }
 
 .story, .contact-fill-blank{
-	display: flex;
 	margin-top: 50px;
 }
 
@@ -1445,16 +1441,19 @@ ul.confirmation-total li{
 	height: 500px;
 	width:auto;
 	background-color: rgb(200,200,200);
+	margin-top: 10px;
 }
 
 .column-left{
 	width: 100%;
 	margin-right: 10%;
+	margin-bottom: 10px;
 }
 
 .column-right{
+	margin-bottom:10px;
 	width: 100%;
-	padding-left: 30px;
+	
 	
 }
 
