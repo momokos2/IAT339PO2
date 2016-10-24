@@ -1196,8 +1196,9 @@ input.promotion-submit[type=button], input.promotion-submit[type=button]:hover {
 	margin-top: 50px;
 }
 
-.popular-item-content p{
-	padding-top: -2em;
+.bag-title span{
+	 background: #fff;
+    padding: 0 20px;
 }
 /*end of homepage.html styling*/
 
@@ -1213,7 +1214,7 @@ input.promotion-submit[type=button], input.promotion-submit[type=button]:hover {
 	margin-top: 30px;
 }
 
-.story{
+.story, .contact-fill-blank{
 	display: flex;
 	margin-top: 50px;
 }
@@ -1230,13 +1231,13 @@ input.promotion-submit[type=button], input.promotion-submit[type=button]:hover {
 }
 
 .column-left{
-	width: 45%;
+	width: 100%;
 	margin-right: 10%;
 }
 
 .column-right{
-	width: 45%;
-	padding-right: 0px;
+	width: 100%;
+	padding-left: 30px;
 	
 }
 
@@ -1246,12 +1247,22 @@ input.promotion-submit[type=button], input.promotion-submit[type=button]:hover {
 
 /*contactus.html styling*/
 
-.left-content{
-	background-color: rgb(200,200,200);
-	width: 40%;
-	height:500px;
+.column-right p{
+	margin-top: 20px;
+
 }
 
+.form{
+	margin-left: 20px;
+}
+
+<<<<<<< e4c63c37d05dfa43fd902816ce554a91676462c0
+=======
+.contacts-other-info{
+	margin-top: 100px;
+}
+
+>>>>>>> 69f1a0ad30d0c75b08d4755c17cbe6f2b44ca411
 /*end of contactus.html styling*/
 
 /*---------------------------------------------------------------------------------------------------------------------------------*/
