@@ -1337,7 +1337,6 @@ ul.confirmation-total li{
 
 /*end of bag-confirmation.html styling*/
 
-
 /*---------------------------------------------------------------------------------------------------------------------------------*/
 
 /*homepage.html styling*/
@@ -1597,11 +1596,260 @@ ul.confirmation-total li{
 
 /*---------------------------------------------------------------------------------------------------------------------------------*/
 
+/*product-detail.html styling*/
+
+.product-section{
+	height:auto;
+	display: inline-block;
+	width:100%;
+}
+
+.product-section img{
+	width:100%;
+}
+
+.product-section-text ul{
+	list-style: none;
+}
+
+.product-section-name{
+	font-family: "Lora-Regular",serif;
+	font-size:2rem;
+	font-weight: 700;
+	color:#333;
+}
+
+.product-section-price{
+	font-family:"Roboto-Regular",sans-serif;
+	font-size:1.2rem;
+	color:#333;
+	padding-top: 0.5rem;
+	padding-bottom: 1.5rem;
+}
+
+.product-section .button{
+	margin-top: :1.5rem;
+}
 
 
+.photo-gallery {
+  width: auto;
+  margin: 0;
+  overflow: hidden;
+  transform: translate(-6px,0);
+}
+.photo-gallery img {
+  display: block;
+  outline: 1px solid white;
+  max-width: 100%;
+}
+
+.photo-gallery-view:before {
+  content: "";
+  display: block;
+  height: 0;
+  padding-top: 80%;
+}
+
+.photo-gallery-view {
+  position: relative;
+}
+.photo-gallery-view img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
+  opacity: 0;
+}
+.photo-gallery-view img:target,
+.photo-gallery-view img.active {
+  z-index: 4;
+  opacity: 1;
+}
+
+.photo-gallery-thumbnails a {
+  display: block;
+  float: left;
+  width: 50%;
+}
+@media screen and (min-width: 321px) {
+  .photo-gallery-thumbnails a {
+    width: 25%;
+  }
+}
+.photo-gallery-thumbnails img {
+  width: 100%;
+  display: block;
+}
+
+h2.detail-page-description{
+	font-family: "PT_Sans-Web-Regular",sans-serif;
+	font-weight: 700;
+	font-size:0.8rem;
+	text-transform: uppercase;
+	color:#333;
+	margin-top: 1.5rem;
+	border-top:solid 1px #333;
+	padding-top: 1rem;
+}
+
+.product-section-text p{
+	margin-bottom: 1.5rem;
+}
+
+ul.frame-lense{
+	border-top:solid 1px #333;
+	padding-top: 1rem;
+}
+
+.product-section h3{
+	font-family: "PT_Sans-Web-Regular",sans-serif;
+	font-weight: 700;
+	font-size:0.8rem;
+	text-transform: uppercase;
+	color:#333;
+}
+
+ul.frame-description li,
+ul.lenses-description li{
+	color:#333;
+	font-family: "PT_Sans-Web-Regular",sans-serif;
+	font-size:1rem;
+}
+
+ul.frame-description{
+	padding-top: 1.5rem;
+}
+
+.comment-section{
+	margin-top: 3.5rem;
+}
+
+h2.ratings-reviews{
+	font-size: 1.5rem;
+	font-family: "PT_Sans-Web-Regular",sans-serif;
+	color:#333;
+	text-transform: uppercase;
+	border-bottom: 1px solid #333;
+	padding-bottom: 0.5rem;
+}
 
 
+.comment-section ul{
+	list-style: none;
+}
 
+.comment-section ul li h4{
+	font-family: "Roboto-Medium",sans-serif;
+	font-size: 1.2rem;
+	padding-top:1.5rem;
+	padding-bottom: 0.5rem;
+}
+
+.fa-star, .fa-star-o{
+	color:#333;
+}
+
+.comment-section .button{
+	float:right;
+	margin-top: 2.5rem;
+}
+
+iframe{
+	width:100%;
+	height: 600px;
+	min-height: auto;
+	margin-top: 1.5rem;
+	border:none;
+}
+
+/*end of product-detail.html styling*/
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+/*comments-page.html styling*/
+
+.customer-section{
+	padding-left: 0;
+	margin-left: 0;
+	transform: translate(-1%,0);
+}
+
+.customer-section .customer-name h1{
+	font-family: "Roboto-Medium",sans-serif;
+	font-size: 1rem;
+	color:#333;
+}
+
+.customer-comment ul{
+	list-style: none;
+}
+
+.customer-comment ul li{
+	padding-bottom: 1rem;
+}
+
+/*end of comments-page.html styling*/
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+/*write-review.html styling*/
+
+.write-review ul{
+	list-style: none;
+}
+
+.write-review-name{
+	font-family: "Lora-Regular",serif;
+	font-size: 1.5rem;
+	color:#333;
+	padding-bottom: 0.5rem;
+}
+
+.write-review-price{
+	font-family: "PT_Sans-Web-Regular",sans-serif;
+	font-size: 1rem;
+	color:#333;
+	padding-bottom: 1rem;
+}
+
+.write-review p{
+	padding-bottom: 1rem;
+}
+
+div.write-your-review label{
+	width:100%;
+	display: block;
+	background:white;
+	padding:10px 0 10px 0;
+	}
+	div.write-your-review label span{
+	display: block;
+	color:#333;
+	font-size:12px;
+	float:left;
+	width:100px;
+	text-align:left;
+	padding:5px 20px 0 0;
+	}
+	
+	div.write-your-review .input_text{
+	padding:10px 10px;
+	width:auto;
+	}
+	
+	div.write-your-review .message{
+	padding:7px 7px;
+	width:350px;
+	overflow:hidden;
+	height:150px;
+	}
+	
+
+	.review-form{
+		margin-bottom: 2rem;
+	}
 
 
 
