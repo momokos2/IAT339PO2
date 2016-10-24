@@ -1255,14 +1255,93 @@ input.promotion-submit[type=button], input.promotion-submit[type=button]:hover {
 .form{
 	margin-left: 20px;
 }
-
-<<<<<<< e4c63c37d05dfa43fd902816ce554a91676462c0
-=======
 .contacts-other-info{
-	margin-top: 100px;
+	margin-top: 80px;
 }
 
->>>>>>> 69f1a0ad30d0c75b08d4755c17cbe6f2b44ca411
+.contacts-other-info h3{
+	margin-bottom: 10px;
+}
+
+.info-detail{
+	width:100%;
+	background-color: rgb(240,240,240);
+	
+}
+
+.contacts-other-info img{
+	margin-left: 30px;
+}
+
+.icon{
+	padding-top: 40px;
+	padding-left: 30px;
+	padding-bottom: 60px;
+
+}
+
+.icon p{
+	font-size: 0.8em;
+	padding-bottom: 10px;
+	color: #333;
+}
+
+#email-icon img{
+	opacity:0.5;
+}
+
+#email-icon p{
+	padding-left: 10px;
+}
+
+#phone-icon img{
+	margin-top: 10px;
+}
+
+#phone-icon p{
+	padding-top: 2px;
+	padding-left: 15px;
+}
+
+#chat-icon img{
+	opacity: 0.4;
+	margin-top: 10px;
+}
+
+#chat-icon p{
+	padding-top: 10px;
+	padding-left: 20px;
+}
+
+#location-icon img{
+	opacity:0.5;
+	margin-top: 10px;
+}
+
+#location-icon p{
+	padding-top: 7px;
+	padding-left: 15px;
+}
+
+.icon-title-info{
+	margin-top: 10px;
+	margin-left: 0px;
+}
+
+.jobs h3{
+	margin-top: 40px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #000;
+	margin-bottom: 15px;
+}
+
+.jobs>p{
+	margin-left: 10px;
+}
+
+
+
+
 /*end of contactus.html styling*/
 
 /*---------------------------------------------------------------------------------------------------------------------------------*/
