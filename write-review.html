@@ -79,21 +79,17 @@
         <li class="write-review-price">$212.94</li>
         <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus congue at arcu a laoreet. Ut rhoncus ante ipsum, sed mollis nisi congue at. Nullam in commodo magna. Ut ultricies lectus quis massa fringilla mollis. Curabitur id nibh a ligula mattis convallis. Quisque fermentum et enim id mattis. In imperdiet volutpat urna, id varius felis condimentum sit amet. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p></li>
         <li>
-          <form class="review-form" action="./" method="post">
-            <div class="write-your-review">
-              <label>
-                 <span>Nick Name *</span>
-                 <input type="text" class="input_text" name="name" id="name"/>
-              </label>
-              <label>
-                  <span>Comment *</span>
-                  <textarea class="review-comment"class="message" name="feedback" id="feedback"></textarea>
-              </label>
-            </div>
-          </form>
+          <div class="text-input">
+          <input id="input" type="text" required="required"/>
+          <label for="input">Nick Name*</label><i class="bar"></i>
+        </div>
+    <div class="text-input">
+      <textarea id="textarea" required="required"></textarea>
+      <label for="textarea">Comment*</label><i class="bar"></i>
+    </div>
         </li>
       </ul>
-         <div class="button ">
+         <div class="button">
             <a class="" href="write-review.html">Submit</a>
             <div class="easing-down"></div>
     </div>  
