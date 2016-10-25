@@ -21,6 +21,14 @@ body{
 	box-sizing: border-box;
 }
 
+body > footer{
+        margin:0px;
+        padding:0px;
+        min-width:100%;
+        max-width:100%;
+        height:auto;
+    }
+
 
 
 /*----------------------nav-section styling----------------------*/
@@ -539,16 +547,16 @@ h1{
 }
 
 h2{
-	font-family: "Roboto-Medium", sans-serif;
-	font-size:2rem;
+	font-family: "Roboto-Regular", sans-serif;
+	font-size:1.75rem;
 	font-weight:400;
 	color:#735751;
 	margin:1px 0;
 }
 
 h3{
-	font-family: "Roboto-Regular", sans-serif;
-	font-size:1.75rem;
+	font-family: "Roboto-Light", sans-serif;
+	font-size:1.25rem;
 	font-weight:800;
 	color:#333;
 	margin:1px 0;
@@ -556,7 +564,7 @@ h3{
 
 h4{
 	font-family: "Roboto-Light", sans-serif;
-	font-size:1.25rem;
+	font-size:1.15rem;
 	font-weight:400;
 	color:#333;
 	margin:1px 0;
@@ -695,7 +703,7 @@ h4.price {
 }
 
 .push{
-	height:30rem;
+	height:10rem;
 }
 /*end of helper classes*/
 
@@ -761,7 +769,7 @@ footer{
     background: rgb(200,200,200);
 	display:inline-block;
 	height:auto;
-	position:absolute;
+	position:relative;
 	right:0;
 	left:0;
 	bottom:0;
@@ -769,6 +777,7 @@ footer{
 
 .footer-div{
 	padding:1% 15%;
+	width: 100%
 }
 
 .footer-div .footer-component ul{
@@ -1374,20 +1383,6 @@ ul.confirmation-total li{
 	
 }
 
-#title-picture{
-	
-	
-	
-}
-
-#event-picture{
-	
-	
-	margin-left: 0em;
-}
-
-
-
 .homepage-product-list{
 	margin-top: 1em;
 }
@@ -1441,8 +1436,7 @@ ul.confirmation-total li{
 	height: 500px;
 	width:auto;
 	background-color: rgb(200,200,200);
-	margin-top: 10px;
-}
+	}
 
 .column-left{
 	width: 100%;
