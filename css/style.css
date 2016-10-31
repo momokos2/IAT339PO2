@@ -1476,6 +1476,11 @@ ul.confirmation-total li{
 	transition: .4s;
 }
 
+ .product-list-page .display-image img{
+ 	width:100%;
+ 	height:auto;
+ }
+
 .product-list-page .product-list:hover {
 	border-bottom: 2px solid #973241;
 }
@@ -1772,7 +1777,7 @@ figure.home-display-img h2 {
 }
 
 .product-list-detail{
-	margin-top: 20px;
+	margin-top: 5rem;
 }
 
 
@@ -1801,7 +1806,7 @@ figure.home-display-img h2 {
 }
 
 .display-image{
-	width: 100%;
+	height: 100%;
 }
 
 /*end of productlist.html styling*/
@@ -2093,6 +2098,9 @@ div.write-your-review label{
 .event-register-button, .event-login-button{
 	margin-top: 20px;
 }
+
+
+
 
 /*---------------------------------------------------------------------------------------------------------------------------------*/
 
