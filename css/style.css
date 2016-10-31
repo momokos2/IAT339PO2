@@ -639,7 +639,7 @@ ol li span{
 	justify-content: space-around;
 }
 
-.product-item {
+/*.product-item {
 	margin-bottom: 10px;
 	text-align: center;
 	border: 1px solid #F1F2F2;
@@ -650,7 +650,7 @@ ol li span{
 
 .product-item:hover {
 	border-bottom: 2px solid #973241;
-}
+}*/
 
 .product-item img {
 	display: block;
@@ -1462,15 +1462,31 @@ ul.confirmation-total li{
 /*---------------------------------------------------------------------------------------------------------------------------------*/
 
 /*homepage.html styling*/
+
+ .product-list-page .product-list{
+	margin-top: 80px;
+	margin-bottom: 50px;
+	text-align: center;
+	border: 1px solid #F1F2F2;
+	border-bottom: 2px solid #F1F2F2；
+	background: white;
+	transition: .4s;
+}
+
+.product-list-page .product-list:hover {
+	border-bottom: 2px solid #973241;
+}
 .event-notice{
 	box-sizing:border-box;
-	background-color: #999;
+	
 	margin-left: auto;
 	margin-right: auto;
 	height:40px;
 	text-align: center;
 	padding-top: 10px;
-	margin-top: -20px;
+	margin-top: 20px;
+	border: 1px solid #F1F2F2;
+	width: 100%;
 
 }
 
@@ -1483,21 +1499,21 @@ ul.confirmation-total li{
 }
 
  #title-picture, #event-picture{	
-	background-color: #999;
+	background-color: white;
 	margin-top: 20px;
 	box-sizing:border-box;
-	padding:1em;
-	height:30em;
+	
+	
 	
 }
 
 .homepage-product-list{
-	margin-top: 1em;
+	margin-top: 2em;
 }
 
 .popular-item-separator{
 	height:3px;
-	margin-top:2em;
+	margin-top:4em;
 	margin-bottom: 2em;
 	text-align: center;
 }
@@ -1541,12 +1557,6 @@ ul.confirmation-total li{
 	text-align: center;
 }
 
-.pic{
-	height: 500px;
-	width:auto;
-	background-color: rgb(200,200,200);
-	}
-
 .column-left{
 	width: 100%;
 	margin-right: 10%;
@@ -1560,23 +1570,26 @@ ul.confirmation-total li{
 	
 }
 
+.about-page .column-left img{
+	margin-top: 2rem;
+	width:100%;
+}
+.about-page .column-right img{
+	margin-top: 1.7rem;
+	width:100%;
+}
+
 /*end of about.html styling*/
 
 /*---------------------------------------------------------------------------------------------------------------------------------*/
 
 /*contactus.html styling*/
 
-.column-right p{
-	margin-top: 20px;
-	font-family: "Roboto-Light",sans-serif;
-	font-size: 1rem;	
-	margin-left: 20px;
-}
 
-.column-right h2{
-	margin-left: 20px;
+.column-left img{
+	margin-top: 6rem;
+	width:100%;
 }
-
 
 .form{
 	margin-left: 20px;
@@ -1688,6 +1701,7 @@ ul.confirmation-total li{
 	box-sizing:border-box;
 	height:200px;
 	margin-bottom: 30px;
+	width: 150%;
 }
 .left-nav h4{
 	font-family: "Roboto-Regular",sans-serif;
@@ -1703,6 +1717,44 @@ ul.confirmation-total li{
 
 .left-nav a:hover{
 	color:#a78a7f;
+}
+
+
+.product-list-wrap img{
+	padding-top: 20px;
+}
+
+.product-list-detail{
+	margin-top: 20px;
+}
+
+
+#product-1{
+	margin-top: 3.5rem;
+}
+
+#product-2{
+	margin-top: 4.2rem;
+}
+
+#product-3{
+	margin-top: 3.7rem;
+}
+
+#product-4{
+	margin-top: 3.5rem;
+}
+#product-5{
+	margin-top: 3rem;
+}
+
+
+#product-6{
+	margin-top: 2.5rem;
+}
+
+.display-image{
+	width: 100%;
 }
 
 /*end of productlist.html styling*/
@@ -1985,6 +2037,10 @@ div.write-your-review label{
 .events-content p{
 	width:90%;
 	margin-left: 20px;
+}
+
+.event-image img{
+	width: 100%;
 }
 
 .event-register-button, .event-login-button{
