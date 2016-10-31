@@ -787,7 +787,7 @@ h4.price {
 
 .menu a {
   line-height: 3rem;
-  padding: 0 1.5rem;
+  padding: 0 1.2rem;
   text-decoration: none;
   font-size: 0.9rem;
   color:#333;
@@ -848,9 +848,8 @@ h4.price {
     position: absolute;
     display: block;
     width: 1rem;
-    height: 0;
     left: 15px;
-    top:10px;
+	top:0.6rem;
     box-shadow: 0 10px 0 1px #000, 0 16px 0 1px #000, 0 22px 0 1px #000;
   }
 
@@ -2075,7 +2074,7 @@ div.write-your-review label{
 }
 
 
-@media only screen and (max-width: 768px) {
+/*@media only screen and (max-width: 768px) {
  body{
  	font-size: 16px;
  }
@@ -2084,10 +2083,10 @@ div.write-your-review label{
  	padding: 10px;
  }
 }
-
+*/
 @media only screen and (max-width: 480px) {
 	body,html{
-		font-size: 32px;
+		font-size: 1.2rem;  /*18px*/
 	}
 }
 
