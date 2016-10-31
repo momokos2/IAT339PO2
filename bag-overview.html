@@ -11,14 +11,13 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/grids.css">
-
+    <link rel="stylesheet" href="css/grid-structure.css">
 
   </head>
 
   <body>
 
-       <div class="nav-bar">
+      <div class="nav-bar">
 
         <a href="homepage.html" class="brand">IKIGAI</a>
 
@@ -65,38 +64,31 @@
       </div> <!-- end of nav bar -->
 
 
-  <div class="bag-overview content-wrapper">
+  <div class="bag-confirmation content-wrapper">
 
   <h1 class="bag-title"><span>Shopping Basket</span></h1> 
 
   <div class="row step-section">
+    
+    <div class="step-1 three columns"><div><a href="bag-overview.html">OVERVIEW</a></div></div>
 
-    <div class="step-1 col-3 col-1/4">
-      <div><a href="bag-overview.html">OVERVIEW</a></div>
-    </div>
-
-    <div class="step-2 col-3 col-1/4">
-      <div><a href=" ">LOGIN</a></div>
-    </div>
-
-    <div class="step-3 col-3 col-1/4">
-      <div><a href=" ">CHECKOUT</a></div>
-    </div>
-
-    <div class="step-4 col-3 col-1/4">
-      <div><a href=" ">CONFIRMATION</a></div>
-    </div>
+    <div class="step-2 three columns"><div><a href="bag-login.html">LOGIN</a></div></div>
+    
+    <div class="step-3 three columns"><div><a href="bag-checkout.html">CHECKOUT</a></div></div>
+    
+    <div class="step-4 three columns last"><div><a href="#">CONFIRMATION</a></div></div>
 
   </div> <!-- end of step section -->
 
+
     <div class="row description-section">
 
-    <div class="description-component col-3 col-1/4">
+    <div class="description-component three columns">
       <div class="description-title">Product</div>
       <img class="overview-pg-img" src="img/bag-overview-img.jpg" alt="a placeholder image"> 
     </div>
 
-    <div class="description-component col-3 col-1/4">
+    <div class="description-component three columns">
       <div class="description-title">Detail</div>
       <ul>
         <li class="overview-pg-product">Product Name</li>
@@ -105,7 +97,7 @@
       </ul>
     </div>
 
-    <div class="description-component col-3 col-1/4">
+    <div class="description-component three columns">
       <div class="description-title">Quantity</div>
         <form class="quantity"action="">
           <input class="quantity-selector" type="number" name="quantity"
@@ -113,7 +105,7 @@
         </form>
     </div>
 
-    <div class="description-component col-3 col-1/4">
+    <div class="description-component three columns last">
       <div class="description-title">Price</div>
       <p class="overview-pg-price">$100.00</p>
     </div>
@@ -128,8 +120,9 @@
 
     <a href="#" class="expand">Have a promotion code?</a>
     <section class="promotion-section">
-      <form>
-      <span><input type="text" class="promotion-bar" placeholder="promotion code"><input type="button" class="promotion-submit" value="SUBMIT"></span>
+       <form class='newsletter'>
+        <input placeholder='Promotion Code' type='text'>
+        <button>ENTER</button>
       </form>
     </section>
   </div>
@@ -155,72 +148,69 @@
 
   </div> <!-- end of content-wrapper -->
 
-  <footer>
+      <footer>
 
-    <div class="row footer-div">
-      <div class="footer-component col-3 col-1/4">
-        <ul>
-          <li class="footer-title"><a href="#">How can we help you?</a></li>
-          <li><a href="#">Terms &amp; Conditions</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Shippment Policy</a></li>
-          <li><a href="#">Return Policy</a></li>
-          <li><a href="#">FAQ</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-component col-3 col-1/4">
-        <ul>
-          <li class="footer-title"><a href="#">Contact Us</a></li>
-          <li><a href="#">Store Locator</a></li>
-          <li><a href="#">Customer Care</a></li>
-          <li><a href="#">Retalier Enquiries</a></li>
-          <li><a href="#">Jobs</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-component col-3 col-1/4">
-        <ul>
-          <li class="footer-title"><a href="#">Sitemap</a></li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">All Models</a></li>
-          <li><a href="#">Lookbook</a></li>
-          <li><a href="#">Stores</a></li>
-          <li><a href="#">Sitemap</a></li>
-        </ul>      
-      </div>
-
-      <div class="footer-component col-3 col-1/4">
-        <ul>
-          <li class="footer-title"><a href="#">Newsletter</a></li>
-          <li>
-            <form>
-             <span><input type="text" class="email-bar" placeholder="email address">
-              <div class="button in-line">
-                <a href="#"> Submit </a>
-                <div class="easing-up"></div>
-              </div>
-              </span>
-            </form>
-          </li>
-        </ul> 
-        <ul>
-          <li class="footer-title"><a href="#">Follow Us</a></li>
-          <div class="social-icon">
-            <a href="#"><i class="fa fa-facebook-official"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-            <a href="#"><i class="fa fa-google-plus"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
+         <div class="row footer-div">
+  
+          <div class="footer-component three columns">
+            <ul>
+                    <li class="footer-title"><a href="#">How can we help you?</a></li>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Shippment Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">FAQ</a></li>
+           </ul>
           </div>
-        </ul> 
-      </div>
+          
+          <div class="footer-component three columns">
+             <ul>
+                <li class="footer-title"><a href="#">Contact Us</a></li>
+                <li><a href="#">Store Locator</a></li>
+                <li><a href="#">Customer Care</a></li>
+                <li><a href="#">Retalier Enquiries</a></li>
+                <li><a href="#">Jobs</a></li>
+           </ul>
+          </div>
+          
+          <div class="footer-component three columns">
+            <ul>
+              <li class="footer-title"><a href="#">Sitemap</a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">All Models</a></li>
+              <li><a href="#">Lookbook</a></li>
+              <li><a href="#">Stores</a></li>
+              <li><a href="#">Sitemap</a></li>
+          </ul>  
+          </div>
+          
+          <div class="footer-component three columns last">
+            <ul>
+                <li class="footer-title"><a href="#">Newsletter</a></li>
+                <li>
+             <form class='newsletter'>
+              <input placeholder='E-mail address' type='text'>
+              <button>ENTER</button>
+            </form>
+                </li>
+              </ul> 
+              <ul>
+                <li class="footer-title"><a href="#">Follow Us</a></li>
+                <div class="social-icon">
+                  <a href="#"><i class="fa fa-facebook-official"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <a href="#"><i class="fa fa-google-plus"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+           </ul> 
+          </div>
+  
+        </div>
 
-      </div>
+      </footer>
 
-  </footer>
-
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-  <script src="js/index.js" type="text/javascript"></script>
+      <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src="js/index.js"></script>
 
   </body>
 

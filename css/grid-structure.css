@@ -1,6 +1,6 @@
 .row{
   width: 100%;
-  margin: 2% auto 0 auto;
+/*  margin: 2% auto 0 auto;*/
   display:block;
 }
 
@@ -70,11 +70,12 @@
 .nine { width: 48% }
 .ten { width: 48% }
 .eleven { width: 48% }
-.twelve { width: 48% }
+.twelve { width: 100% }
     
  }
 
-  @media only screen and (max-width: 480px) {
+
+@media only screen and (max-width: 480px) {
 
 .page{
     margin-top:0;
