@@ -713,6 +713,10 @@ h4.price {
 	height:auto;
 }
 
+.content-wrapper.homepage{
+	margin-top: 80px;
+}
+
  @media only screen and (max-width: 780px) {
  	.content-wrapper{
  	margin:100px 5% 0 5%;
@@ -1486,33 +1490,30 @@ ul.confirmation-total li{
 }
 .event-notice{
 	box-sizing:border-box;
-	
+	background-color: #a78a7f;
 	margin-left: auto;
 	margin-right: auto;
-	height:40px;
 	text-align: center;
-	padding-top: 10px;
-	margin-top: 20px;
 	border: 1px solid #F1F2F2;
 	width: 100%;
-
 }
 
 .event-notice a{
 	text-decoration: none;
-	color: #333;
+	color: white;
 	font-family: "Roboto-regular", sans-serif;
-	font-size: 1.3rem;
-	
+	font-size: 0.8rem;
+	line-height: 2rem;
+}
+
+.event-notice a:hover{
+	color: black;
 }
 
  #title-picture, #event-picture{	
 	background-color: white;
 	margin-top: 20px;
 	box-sizing:border-box;
-	
-	
-	
 }
 
 .homepage-product-list{
