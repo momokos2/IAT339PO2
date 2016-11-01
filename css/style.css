@@ -710,7 +710,6 @@ h4.price {
 /*helper classes*/
 .content-wrapper{
 	margin:100px 15% 0 15%;
-	height:auto;
 }
 
 .content-wrapper.homepage{
@@ -773,6 +772,12 @@ h4.price {
 	box-shadow: 0px 2px 2px 0px rgba(204,204,204,1);
 	background-color: white;
 }
+
+/* @media only screen and (max-width: 780px) {
+ 	.header{
+ 	transform:translate(0,-6.5rem);
+ 	}
+ }*/
 
 .header-logo {
   padding-right: 4rem;
@@ -1503,7 +1508,7 @@ ul.confirmation-total li{
 	color: white;
 	font-family: "Roboto-regular", sans-serif;
 	font-size: 0.8rem;
-	line-height: 2rem;
+	line-height: 30px;
 }
 
 .event-notice a:hover{
@@ -1736,9 +1741,6 @@ figure.home-display-img h2 {
 /*---------------------------------------------------------------------------------------------------------------------------------*/
 
 /*productlist.html styling*/
-.product-list-page {
-	margin-top: 70px;
-}
 
 .product-list-page section{
 	margin-bottom: 40px;
