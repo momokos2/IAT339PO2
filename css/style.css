@@ -712,9 +712,9 @@ h4.price {
 	margin:100px 15% 0 15%;
 }
 
-.content-wrapper.homepage{
+/*.content-wrapper.homepage{
 	margin-top: 80px;
-}
+}*/
 
  @media only screen and (max-width: 780px) {
  	.content-wrapper{
@@ -2173,8 +2173,8 @@ div.write-your-review label{
 	position:absolute;
 	left: 50%;
   	margin-left: -16rem;
-  	top: 6rem;
-  	min-height: 32rem;
+  	top: 15rem;
+  	min-height: 20rem;
   	z-index: 2;
 }
 
@@ -2217,8 +2217,19 @@ div.write-your-review label{
 	opacity:1;
 }
 
-.bag h2{
+.bag h3{
 	text-align: center;
+	margin-top: 6rem;
+}
+
+.bag .button{
+	margin-top: 2rem;
+	margin-left: 33%;
+}
+
+.button .bag-close{
+	right:0;
+	top:0;
 }
 
 
