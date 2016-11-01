@@ -917,7 +917,7 @@ h4.price {
 /*footer styling*/
 footer{
     background: rgb(200,200,200);
-	display:inline-block;
+	
 	height:auto;
 	position:relative;
 	right:0;
@@ -2143,6 +2143,13 @@ div.write-your-review label{
 	}
 }
 
+@media only screen and (max-width: 780px) {
+ 	.header{
+ 	transform:translate(0,-6.3rem);
+ 	}
+ }
+
+/* bag pop up window*/
 
 
 
