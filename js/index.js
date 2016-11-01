@@ -62,6 +62,22 @@ $(document).ready(function(){
 });
 
 
+var bag = $('.bag');
+
+$( ".add-to-bag-button" ).on( "click", function(){
+  $( bag).toggleClass('bag-show');
+
+});
+
+$( ".overlay" ).on( "click",function(){
+  $( bag).toggleClass('bag-show');
+});
+
+$( ".bag-close" ).on("click", function(){
+  $( bag).toggleClass('bag-show');
+});
+
+
 
 
 
